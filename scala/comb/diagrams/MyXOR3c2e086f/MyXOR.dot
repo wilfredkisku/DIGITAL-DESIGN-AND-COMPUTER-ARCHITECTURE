@@ -1,0 +1,40 @@
+digraph MyXOR {
+stylesheet = "styles.css"
+rankdir="LR" 
+
+subgraph cluster_MyXOR {
+  label="MyXOR"
+  URL=""
+  bgcolor="#FFF8DC"
+  cluster_MyXOR_clock [shape = "rectangle" style="filled" fillcolor="#CCCCCC" label="clock" rank="0"]
+     
+cluster_MyXOR_reset [shape = "rectangle" style="filled" fillcolor="#CCCCCC" label="reset" rank="0"]
+     
+cluster_MyXOR_io_a [shape = "rectangle" style="filled" fillcolor="#CCCCCC" label="io_a" rank="0"]
+     
+cluster_MyXOR_io_b [shape = "rectangle" style="filled" fillcolor="#CCCCCC" label="io_b" rank="0"]
+     
+cluster_MyXOR_io_c [shape = "rectangle" style="filled" fillcolor="#E0FFFF" label="io_c" rank="1000"]
+     
+
+op_xor_1 [shape = "plaintext" label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#D8BFD8">
+  <TR>
+    <TD PORT="in1">&#x25cf;</TD>
+    <TD ROWSPAN="2" > xor </TD>
+    <TD ROWSPAN="2" PORT="out">&#x25cf;</TD>
+  </TR>
+  <TR>
+    <TD PORT="in2">&#x25cf;</TD>
+  </TR>
+</TABLE>>];
+       
+
+  op_xor_1:out -> cluster_MyXOR_io_c
+  cluster_MyXOR_io_a -> op_xor_1:in1
+  cluster_MyXOR_io_b -> op_xor_1:in2
+  
+  
+}
+     
+}
