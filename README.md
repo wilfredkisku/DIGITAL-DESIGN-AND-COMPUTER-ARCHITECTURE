@@ -1,5 +1,6 @@
 # Digital Design and Computer Architecture
 
+## Simulating Verilog files with ```iverilog``` and ```gtkwave```
 ```$dumpvars``` and ```$dumpfile``` Verilog
 
 In the waveform genration tutorial we had used $dumpfile and $dumpvars system tasks. We will now take a deeper look into these two system variables.
