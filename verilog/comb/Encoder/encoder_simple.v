@@ -5,13 +5,15 @@ module encoder32_5(en, A, Y);
 	
 	integer i;
 	
-	always @(en, A) begin
+	always @(*) begin
 		Y = 5'b00000;
-		for (i=0;i<32;i+=1) begin
-			if (A[i] == 1) begin
-				Y = i;
-			end
-		end	
-	end
+		if (en == 1) begin
+			for (i=0;i<32;i+=1) begin
+				if (A[i] == 1) begin
+					Y = i;
+				end //if
+			end //for
+		end //for
+	end //always
 endmodule
 
