@@ -11,3 +11,18 @@
 #-----------------------------------------------------------
 start_gui
 create_project SR_ff /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff -part xc7a35tftg256-1
+file mkdir /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.srcs/sources_1/new
+close [ open /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.srcs/sources_1/new/sr_ff.v w ]
+add_files /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.srcs/sources_1/new/sr_ff.v
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/wilfred/Downloads/EDGE_Artix7_Master.xdc
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1

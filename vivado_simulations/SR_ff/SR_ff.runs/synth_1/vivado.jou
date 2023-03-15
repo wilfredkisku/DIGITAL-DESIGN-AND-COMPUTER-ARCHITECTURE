@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar 16 01:09:11 2023
+# Process ID: 15530
+# Current directory: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1
+# Command line: vivado -log sr_ff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sr_ff.tcl
+# Log file: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1/sr_ff.vds
+# Journal file: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sr_ff.tcl -notrace
