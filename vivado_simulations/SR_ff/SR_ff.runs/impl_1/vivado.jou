@@ -9,3 +9,4 @@
 # Log file: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/impl_1/sr_ff.vdi
 # Journal file: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
+source sr_ff.tcl -notrace
