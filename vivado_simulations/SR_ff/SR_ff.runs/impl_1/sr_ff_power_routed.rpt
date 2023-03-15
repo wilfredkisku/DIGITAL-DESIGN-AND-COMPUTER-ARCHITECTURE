@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Thu Mar 16 01:28:00 2023
+| Date             : Thu Mar 16 01:33:26 2023
 | Host             : wilfred running 64-bit Ubuntu 18.04.6 LTS
 | Command          : report_power -file sr_ff_power_routed.rpt -pb sr_ff_power_summary_routed.pb -rpx sr_ff_power_routed.rpx
 | Design           : sr_ff
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.757        |
+| Total On-Chip Power (W)  | 2.606        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.679        |
+| Dynamic (W)              | 2.527        |
 | Device Static (W)        | 0.078        |
 | Effective TJA (C/W)      | 4.9          |
-| Max Ambient (C)          | 76.5         |
-| Junction Temperature (C) | 33.5         |
+| Max Ambient (C)          | 72.4         |
+| Junction Temperature (C) | 37.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -54,10 +54,10 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.007 |        2 |       --- |             --- |
 |   LUT as Logic |     0.007 |        2 |     20800 |           <0.01 |
-| Signals        |     0.038 |        5 |       --- |             --- |
-| I/O            |     1.634 |        5 |       170 |            2.94 |
+| Signals        |     0.028 |        5 |       --- |             --- |
+| I/O            |     2.491 |        5 |       170 |            2.94 |
 | Static Power   |     0.078 |          |           |                 |
-| Total          |     1.757 |          |           |                 |
+| Total          |     2.606 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,11 +67,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.071 |       0.058 |      0.013 |
-| Vccaux    |       1.800 |     0.091 |       0.078 |      0.013 |
-| Vcco33    |       3.300 |     0.343 |       0.342 |      0.001 |
+| Vccint    |       1.000 |     0.063 |       0.048 |      0.015 |
+| Vccaux    |       1.800 |     0.104 |       0.091 |      0.013 |
+| Vcco33    |       3.300 |     0.703 |       0.702 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.197 |       0.196 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +-------+-----------+
 | Name  | Power (W) |
 +-------+-----------+
-| sr_ff |     1.679 |
+| sr_ff |     2.527 |
 +-------+-----------+
 
 

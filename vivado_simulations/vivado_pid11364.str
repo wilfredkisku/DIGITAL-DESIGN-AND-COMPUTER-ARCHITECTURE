@@ -841,3 +841,118 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGE_Ar
 selectCodeEditor("EDGE_Artix7_Master.xdc", 535, 237); // ch (w, cr)
 // TclEventType: DESIGN_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 60 seconds
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 831, 340); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 19, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Mar 16 01:30:59 2023] Launched synth_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1/runme.log [Thu Mar 16 01:30:59 2023] Launched impl_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 293, 232); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [/home/wilfred/Downloads/EDGE_Artix7_Master.xdc:6]. ]", 5, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages]", 4, true); // ah (O, cr) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A288EEA. ]", 2, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [/home/wilfred/Downloads/EDGE_Artix7_Master.xdc:6]. ]", 5, true); // ah (O, cr) - Node
+// Elapsed time: 15 seconds
+selectCodeEditor("EDGE_Artix7_Master.xdc", 312, 379); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 312, 379); // ch (w, cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 139 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Common 17-55] 'set_property' expects at least one object. [/home/wilfred/Downloads/EDGE_Artix7_Master.xdc:6]. ]", 5, true); // ah (O, cr) - Node
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)

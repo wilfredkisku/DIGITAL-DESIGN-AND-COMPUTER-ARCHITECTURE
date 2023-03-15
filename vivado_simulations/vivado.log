@@ -160,3 +160,10 @@ WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when lau
 Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1/runme.log
 [Thu Mar 16 01:25:50 2023] Launched impl_1...
 Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Mar 16 01:30:59 2023] Launched synth_1...
+Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/synth_1/runme.log
+[Thu Mar 16 01:30:59 2023] Launched impl_1...
+Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/SR_ff/SR_ff.runs/impl_1/runme.log
