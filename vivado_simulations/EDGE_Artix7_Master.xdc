@@ -15,8 +15,8 @@ set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
 set_property -dict { PACKAGE_PIN N11    IOSTANDARD LVCMOS33 } [get_ports { clk }];
 
 # Switches
-set_property -dict { PACKAGE_PIN L5    IOSTANDARD LVCMOS33 } [get_ports { s }];#LSB
-set_property -dict { PACKAGE_PIN L4    IOSTANDARD LVCMOS33 } [get_ports { r }];
+#set_property -dict { PACKAGE_PIN L5    IOSTANDARD LVCMOS33 } [get_ports { s }];#LSB
+#set_property -dict { PACKAGE_PIN L4    IOSTANDARD LVCMOS33 } [get_ports { r }];
 #set_property -dict { PACKAGE_PIN M4    IOSTANDARD LVCMOS33 } [get_ports { sw[2] }];
 #set_property -dict { PACKAGE_PIN M2    IOSTANDARD LVCMOS33 } [get_ports { sw[3] }];
 #set_property -dict { PACKAGE_PIN M1    IOSTANDARD LVCMOS33 } [get_ports { sw[4] }];
@@ -33,8 +33,8 @@ set_property -dict { PACKAGE_PIN L4    IOSTANDARD LVCMOS33 } [get_ports { r }];
 #set_property -dict { PACKAGE_PIN M6    IOSTANDARD LVCMOS33 } [get_ports { sw[15] }];#MSB
 
 # LEDs
-set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { q }];#LSB
-set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { qbar }];
+set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { LED }];#LSB
+#set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { qbar }];
 #set_property -dict { PACKAGE_PIN J1    IOSTANDARD LVCMOS33 } [get_ports { led[2] }];
 #set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { led[3] }];
 #set_property -dict { PACKAGE_PIN L3    IOSTANDARD LVCMOS33 } [get_ports { led[4] }];
@@ -169,8 +169,8 @@ set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { qbar }
 #set_property -dict { PACKAGE_PIN G16 IOSTANDARD LVCMOS33 } [get_ports { wifi_rxd }];
 
 ## CMOS Camera
-#set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33} [get_ports {ov7670_sioc}];
-#set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {ov7670_siod}]; 
+set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33} [get_ports {clk_to_pmod}];
+set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {clk_125_out}]; 
 #set_property -dict { PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports {ov7670_vsync}]; 
 #set_property -dict { PACKAGE_PIN P16 IOSTANDARD LVCMOS33} [get_ports {ov7670_href}]; 
 #set_property -dict { PACKAGE_PIN R15 IOSTANDARD LVCMOS33} [get_ports {ov7670_pclk}];
