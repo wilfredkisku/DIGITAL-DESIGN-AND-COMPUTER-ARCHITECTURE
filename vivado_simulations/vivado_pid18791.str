@@ -188,3 +188,291 @@ selectButton("FINISH", "Finish"); // JButton (j, f)
 dismissDialog("Create Project"); // bB (f)
 dismissDialog("New Project"); // f (cr)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 57 MB. Current time: 3/16/23, 6:40:45 PM IST
+// Elapsed time: 313 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "edge_dff"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.srcs/sources_1/new/edge_dff.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.srcs/sources_1/new/edge_dff.v 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,078 MB. GUI used memory: 56 MB. Current time: 3/16/23, 6:46:25 PM IST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, edge_dff (edge_dff.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, edge_dff (edge_dff.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// [Engine Memory]: 1,081 MB (+344kb) [00:17:41]
+selectCodeEditor("edge_dff.v", 110, 348); // ch (w, cr)
+// [Engine Memory]: 1,148 MB (+13381kb) [00:19:06]
+// Elapsed time: 124 seconds
+typeControlKey((HResource) null, "edge_dff.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+// Elapsed time: 165 seconds
+selectCodeEditor("edge_dff.v", 180, 409); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("edge_dff.v", 63, 414); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "edge_dff.v", 'v'); // ch (w, cr)
+selectCodeEditor("edge_dff.v", 167, 414); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 237 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,169 MB. GUI used memory: 59 MB. Current time: 3/16/23, 6:56:00 PM IST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 16 18:56:01 2023] Launched synth_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/synth_1/runme.log [Thu Mar 16 18:56:02 2023] Launched impl_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1191 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1017ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 108 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Implementation Completed"); // aj (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+setFileChooser("/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/EDGE_Artix7_Master.xdc");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, EDGE_Artix7_Master.xdc]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, EDGE_Artix7_Master.xdc]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("EDGE_Artix7_Master.xdc", 402, 96); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "edge_dff.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGE_Artix7_Master.xdc", 2); // i (h, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 531, 218); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 531, 218, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("EDGE_Artix7_Master.xdc", 10, 237); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 166, 313); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 5, 210); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 4, 235); // ch (w, cr)
+selectCodeEditor("EDGE_Artix7_Master.xdc", 515, 224); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Mar 16 18:59:48 2023] Launched synth_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/synth_1/runme.log [Thu Mar 16 18:59:49 2023] Launched impl_1... Run output will be captured here: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,190 MB. GUI used memory: 63 MB. Current time: 3/16/23, 6:59:50 PM IST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 83 seconds
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Status", 2); // az (O, cr)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "edge_dff.v", 1); // i (h, cr)
+selectCodeEditor("edge_dff.v", 129, 390); // ch (w, cr)
+selectCodeEditor("edge_dff.v", 215, 442); // ch (w, cr)
+selectCodeEditor("edge_dff.v", 215, 442); // ch (w, cr)
+// [GUI Memory]: 119 MB (+219kb) [00:32:52]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGE_Artix7_Master.xdc", 2); // i (h, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 22 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1452 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// [Engine Memory]: 1,229 MB (+24877kb) [00:33:20]
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,230 MB. GUI used memory: 67 MB. Current time: 3/16/23, 7:02:10 PM IST
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: [?1034h  ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-11:11:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// bB (cr):  Auto Connect : addNotify
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2377 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A288EEA 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,280 MB. GUI used memory: 67 MB. Current time: 3/16/23, 7:02:36 PM IST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/impl_1/edge_dff.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,292 MB (+1050316kb) [00:33:50]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/edge_d_ff_structural/edge_d_ff_structural.runs/impl_1/edge_dff.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 57 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/EDGE_Artix7_Master.xdc:172]. ]", 21, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Project 1-111] Unisim Transformation Summary:. No Unisim elements were transformed.. . ]", 26, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization]", 33, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Project 1-111] Unisim Transformation Summary:. No Unisim elements were transformed.. . ]", 26, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/EDGE_Artix7_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/edge_dff_propImpl.xdc].. Resolution: To avoid this warning, move constraints listed in ['Undefined'] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.. ]", 22, false); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 15); // ah (O, cr)

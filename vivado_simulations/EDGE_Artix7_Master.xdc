@@ -4,8 +4,8 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 #set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -of_objects [get_cells q_OBUF_inst_i_1]]
-set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets { q } ]
-set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets { qbar }]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets { Q } ]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets { Q_bar }]
 set_property SEVERITY {Warning}  [get_drc_checks LUTLP-1] 
 set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
 set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
@@ -15,7 +15,7 @@ set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
 set_property -dict { PACKAGE_PIN N11    IOSTANDARD LVCMOS33 } [get_ports { clk }];
 
 # Switches
-#set_property -dict { PACKAGE_PIN L5    IOSTANDARD LVCMOS33 } [get_ports { s }];#LSB
+set_property -dict { PACKAGE_PIN L5    IOSTANDARD LVCMOS33 } [get_ports { data }];#LSB
 #set_property -dict { PACKAGE_PIN L4    IOSTANDARD LVCMOS33 } [get_ports { r }];
 #set_property -dict { PACKAGE_PIN M4    IOSTANDARD LVCMOS33 } [get_ports { sw[2] }];
 #set_property -dict { PACKAGE_PIN M2    IOSTANDARD LVCMOS33 } [get_ports { sw[3] }];
@@ -33,8 +33,8 @@ set_property -dict { PACKAGE_PIN N11    IOSTANDARD LVCMOS33 } [get_ports { clk }
 #set_property -dict { PACKAGE_PIN M6    IOSTANDARD LVCMOS33 } [get_ports { sw[15] }];#MSB
 
 # LEDs
-set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { LED }];#LSB
-#set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { qbar }];
+set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { Q }];#LSB
+set_property -dict { PACKAGE_PIN H3    IOSTANDARD LVCMOS33 } [get_ports { Q_bar }];
 #set_property -dict { PACKAGE_PIN J1    IOSTANDARD LVCMOS33 } [get_ports { led[2] }];
 #set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { led[3] }];
 #set_property -dict { PACKAGE_PIN L3    IOSTANDARD LVCMOS33 } [get_ports { led[4] }];
