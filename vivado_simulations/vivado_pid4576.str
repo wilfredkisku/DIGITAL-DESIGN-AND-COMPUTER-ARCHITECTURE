@@ -1,0 +1,452 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 4576
+License: Customer
+
+Current time: 	Thu Mar 16 15:12:41 IST 2023
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 5.4.0-144-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 546 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	wilfred
+User home directory: /home/wilfred
+User working directory: /home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/wilfred/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/wilfred/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/wilfred/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/vivado.log
+Vivado journal file location: 	/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-4576-wilfred
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@172.16.100.142
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_SDK: /tools/Xilinx/Vitis/2019.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2019.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 777 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 784 MB. GUI used memory: 46 MB. Current time: 3/16/23, 3:12:43 PM IST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.xpr", 1); // r (O, cr)
+// [GUI Memory]: 93 MB (+95127kb) [00:00:38]
+// [Engine Memory]: 794 MB (+680602kb) [00:00:38]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 948 MB (+120591kb) [00:00:54]
+// [Engine Memory]: 1,013 MB (+18612kb) [00:00:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  6811 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,027 MB. GUI used memory: 56 MB. Current time: 3/16/23, 3:13:05 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 6643.332 ; gain = 212.043 ; free physical = 1899 ; free virtual = 6323 
+// Project name: clock_pmod_out; location: /home/wilfred/vivado_workspace/clock_pmod_out; part: xc7z020clg400-1
+// [GUI Memory]: 110 MB (+12543kb) [00:00:59]
+// Elapsed time: 21 seconds
+dismissDialog("Open Project"); // bB (cr)
+// [Engine Memory]: 1,073 MB (+9403kb) [00:01:01]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (clock_out.v) elapsed time: 0.5s
+// Elapsed time: 240 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_out (clock_out.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_out (clock_out.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("clock_out.v", 111, 189); // ch (w, cr)
+selectCodeEditor("clock_out.v", 121, 234); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 58 MB. Current time: 3/16/23, 3:17:23 PM IST
+// Elapsed time: 71 seconds
+selectCodeEditor("clock_out.v", 62, 234); // ch (w, cr)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "clock_out.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,121 MB. GUI used memory: 58 MB. Current time: 3/16/23, 3:18:53 PM IST
+// Elapsed time: 22 seconds
+selectCodeEditor("clock_out.v", 99, 187); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,137 MB (+10707kb) [00:07:17]
+// [GUI Memory]: 117 MB (+2204kb) [00:07:25]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 16 15:19:37 2023] Launched synth_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/synth_1/runme.log [Thu Mar 16 15:19:37 2023] Launched impl_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 59 MB. Current time: 3/16/23, 3:19:38 PM IST
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("clock_out.v", 55, 358); // ch (w, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("clock_out.v", 136, 279); // ch (w, cr)
+// aj (cr): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectCodeEditor("clock_out.v", 226, 167); // ch (w, cr)
+selectCodeEditor("clock_out.v", 138, 80); // ch (w, cr)
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "clock_out.v", 'v'); // ch (w, cr)
+selectCodeEditor("clock_out.v", 56, 403); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("clock_out.v", 113, 394); // ch (w, cr)
+selectCodeEditor("clock_out.v", 113, 394); // ch (w, cr)
+selectCodeEditor("clock_out.v", 112, 66); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("clock_out.v", 286, 54); // ch (w, cr)
+selectCodeEditor("clock_out.v", 261, 167); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// HMemoryUtils.trashcanNow. Engine heap size: 1,168 MB. GUI used memory: 59 MB. Current time: 3/16/23, 3:22:08 PM IST
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Thu Mar 16 15:22:11 2023] Launched synth_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/synth_1/runme.log [Thu Mar 16 15:22:11 2023] Launched impl_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectCodeEditor("clock_out.v", 113, 327); // ch (w, cr)
+selectCodeEditor("clock_out.v", 113, 327); // ch (w, cr)
+selectCodeEditor("clock_out.v", 113, 327); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("clock_out.v", 113, 337); // ch (w, cr)
+selectCodeEditor("clock_out.v", 258, 245); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Thu Mar 16 15:24:13 2023] Launched synth_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/synth_1/runme.log [Thu Mar 16 15:24:14 2023] Launched impl_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+selectCodeEditor("clock_out.v", 274, 199); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 49 seconds
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 59 MB. Current time: 3/16/23, 3:25:28 PM IST
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 346, 227); // ch (w, cr)
+selectCodeEditor("clock_out.v", 92, 85); // ch (w, cr)
+selectCodeEditor("clock_out.v", 341, 277); // ch (w, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 23 seconds
+selectCodeEditor("clock_out.v", 251, 312); // ch (w, cr)
+selectCodeEditor("clock_out.v", 251, 312); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 38 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (cr): Launch Runs: addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// [Engine Memory]: 1,209 MB (+16118kb) [00:14:40]
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Mar 16 15:26:47 2023] Launched impl_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,209 MB. GUI used memory: 61 MB. Current time: 3/16/23, 3:26:48 PM IST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 61 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // aj (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-584] No ports matched 'clk_125'. [/home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.srcs/constrs_1/new/base.xdc:37]. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, PS7, Zynq requires PS7 block, PS7]", 18, true); // ah (O, cr) - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 1 out of 4 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: clk_125_out.. ]", 14, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 1 out of 4 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: clk_125_out.. ]", 14, false); // ah (O, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, base.xdc]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, base.xdc]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("base.xdc", 234, 224); // ch (w, cr)
+selectCodeEditor("base.xdc", 234, 224); // ch (w, cr)
+selectCodeEditor("base.xdc", 234, 224); // ch (w, cr)
+selectCodeEditor("base.xdc", 568, 302); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_out.v", 1); // i (h, cr)
+selectCodeEditor("clock_out.v", 116, 179); // ch (w, cr)
+selectCodeEditor("clock_out.v", 116, 179); // ch (w, cr)
+selectCodeEditor("clock_out.v", 116, 179); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Mar 16 15:28:49 2023] Launched synth_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/synth_1/runme.log [Thu Mar 16 15:28:49 2023] Launched impl_1... Run output will be captured here: /home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 155 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,267 MB. GUI used memory: 65 MB. Current time: 3/16/23, 3:31:28 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,561 MB. GUI used memory: 64 MB. Current time: 3/16/23, 3:31:43 PM IST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,989 MB. GUI used memory: 64 MB. Current time: 3/16/23, 3:31:49 PM IST
+// [Engine Memory]: 1,996 MB (+761559kb) [00:19:43]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /tools/Xilinx/Vivado/2019.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.9s
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 128 MB (+5396kb) [00:19:45]
+// [Engine Memory]: 2,107 MB (+12074kb) [00:19:45]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 148 MB (+13498kb) [00:19:47]
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  4155 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7106.355 ; gain = 0.000 ; free physical = 1621 ; free virtual = 6090 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are: 
+// Tcl Message:   general.maxThreads 
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7670.391 ; gain = 0.000 ; free physical = 1137 ; free virtual = 5598 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.092064 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7670.391 ; gain = 0.000 ; free physical = 1137 ; free virtual = 5598 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7670.391 ; gain = 0.000 ; free physical = 1137 ; free virtual = 5598 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 29 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 7833.395 ; gain = 938.566 ; free physical = 1022 ; free virtual = 5500 
+// ExpRunCommands.openImplResults elapsed time: 30.2s
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 156 MB (+444kb) [00:19:51]
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1303 ms.
+// [Engine Memory]: 2,229 MB (+17218kb) [00:19:54]
+// 'dQ' command handler elapsed time: 36 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2227 ms.
+dismissDialog("Open Implemented Design"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,322 MB. GUI used memory: 103 MB. Current time: 3/16/23, 3:33:48 PM IST
+// Elapsed time: 107 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_out.v", 2); // i (h, cr)
+selectCodeEditor("clock_out.v", 66, 171); // ch (w, cr)
+typeControlKey((HResource) null, "clock_out.v", 'c'); // ch (w, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("CANCEL", "Cancel"); // JButton (j, f)
+// 'g' command handler elapsed time: 12 seconds
+dismissDialog("New Project"); // f (cr)
