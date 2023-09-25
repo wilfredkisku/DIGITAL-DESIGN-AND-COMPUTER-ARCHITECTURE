@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/synth_1'
+HD_PWD='/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/clock_pmod_out/clock_pmod_out.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log clock_out.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_out.tcl
+EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl

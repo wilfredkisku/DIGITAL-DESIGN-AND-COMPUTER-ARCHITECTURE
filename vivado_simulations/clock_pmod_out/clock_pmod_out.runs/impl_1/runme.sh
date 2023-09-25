@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/wilfred/vivado_workspace/clock_pmod_out/clock_pmod_out.runs/impl_1'
+HD_PWD='/home/wilfred/Desktop/github/Digital-Design-and-Computer-Architecture/vivado_simulations/clock_pmod_out/clock_pmod_out.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log clock_out.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_out.tcl -notrace
+EAStep vivado -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 
 

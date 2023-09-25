@@ -34,6 +34,7 @@ module clock_out(clk, clk_to_pmod,clk_125, LED);
   
   assign LED = divd_clk;
   assign clk_to_pmod = divd_clk;
+  
   assign clk_125 = clk;
   
   always @ (posedge clk) 
@@ -46,6 +47,7 @@ module clock_out(clk, clk_to_pmod,clk_125, LED);
       count1 <= count1 +1;
     end
     end
+ 
  always @ (posedge clk) 
  begin
    if (count1 == 10000000)
