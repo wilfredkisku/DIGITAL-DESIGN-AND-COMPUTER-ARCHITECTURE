@@ -142,6 +142,6 @@ endmodule
 
 + Inside the always block, there are two blocking assignments:
 
-- The first one (q = 1'b0;) is for the reset condition. When the reset (rst) is asserted, it sets the output register q to logic 0.
-- The second one (q = data;) represents the clocked behavior. When the clock edge is detected and the reset is not asserted, it updates the output register q with the input data (data).
-- Blocking assignments (=) are used in both cases, ensuring sequential execution of these statements within the always block. The simulator will wait for the completion of each assignment before moving on to the next line in the block.
+   - The first one (q = 1'b0;) is for the reset condition. When the reset (rst) is asserted, it sets the output register q to logic 0.
+   - The second one (q = data;) represents the clocked behavior. When the clock edge is detected and the reset is not asserted, it updates the output register q with the input data (data).
+   - Blocking assignments (=) are used in both cases, ensuring sequential execution of these statements within the always block. The simulator will wait for the completion of each assignment before moving on to the next line in the block.
