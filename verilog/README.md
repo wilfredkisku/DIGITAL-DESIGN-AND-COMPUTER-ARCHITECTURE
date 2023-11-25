@@ -40,6 +40,24 @@ The defparam statement specifically operates during compilation, enabling the ad
 
 In Verilog, there are two approaches for altering a module's parameter value when instantiating the module.
 
+```
+module design_ip  
+    #(parameter BUS_WIDTH=32,  
+        parameter DATA_WIDTH=64)   
+           (input [BUS_WIDTH-1:0] addr,  
+// other port declarations  
+   );
+```
+Verilog construct called defparam to set the new parameter values. The first method is commonly used to pass new parameters in RTL designs. And the second method is used in testbench simulations to quickly update the design parameters without having to reinstantiate the module.
+
+```
+module tb;  
+      // Module instantiation override  
+     design_ip  #(BUS_WIDTH = 64, DATA_WIDTH = 128) d0 ( [port list]);  
+    // Use of defparam to override  
+    defparam d0.FIFO_DEPTH = 128;  
+endmodule  
+```
 ### wire Elements (Combinational logic)
 ```wire``` elements are simple wires (or busses of arbitrary width) in Verilog designs. The following are syntax
 rules when using wires:
