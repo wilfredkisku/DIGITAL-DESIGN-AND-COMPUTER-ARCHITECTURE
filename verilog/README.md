@@ -1,3 +1,4 @@
+## Consturcts 
 ### Module definitions and instances
 
 The module is the basic logic entity in Verilog.
@@ -92,7 +93,55 @@ syntax rules when using reg elements.
 3. ```reg``` elements can be used as outputs within an actual module declaration.
 4. ```reg``` elements cannot be used as inputs within an actual module declaration.
 5. ```reg``` is the only legal type on the left-hand side of an always@ block = or <= sign.
-6. ```reg``` is the only legal type on the left-hand side of an initial block = sign (used in Test Benches).
-7. ```reg``` cannot be used on the left-hand side of an assign statement.
-8. ```reg``` can be used to create registers when used in conjunction with always@(posedge Clock) blocks.
-9. ```reg``` can, therefore, be used to create both combinational and sequential logic.
+7. ```reg``` is the only legal type on the left-hand side of an initial block = sign (used in Test Benches).
+8. ```reg``` cannot be used on the left-hand side of an assign statement.
+9. ```reg``` can be used to create registers when used in conjunction with always@(posedge Clock) blocks.
+10. ```reg``` can, therefore, be used to create both combinational and sequential logic.
+
+## Conceptual Constructs
+
+### blocking statements
+
+In Verilog, blocking statements are statements that execute sequentially in the order they appear in the code, and they cause the simulator to wait for their completion before moving on to the next statement. These statements are also referred to as procedural assignments.
+
+When a blocking assignment is encountered, the simulator suspends execution until the assigned statement is completed. This means that the next line of code won't be executed until the blocking assignment is finished.
+
+The most common form of a blocking statement is the "=" assignment operator. For example:
+```
+a = b + c;  // Blocking assignment
+```
+In this case, the value of b + c is assigned to a, and the simulator will wait for this assignment to complete before moving on to the next statement.
+
+Blocking assignments are commonly used in procedural blocks like always and initial blocks to model sequential behavior in hardware description. They are contrasted with non-blocking assignments (using "<="), which are used to model concurrent behavior in Verilog.
+
+### Non Blocking statement
+```
+module SimpleFlipFlop (
+  input wire clk,
+  input wire rst,
+  input wire data,
+  output reg q
+);
+
+  always @(posedge clk or posedge rst) begin
+    // Blocking assignment for reset
+    if (rst) begin
+      q = 1'b0;
+    end
+    // Blocking assignment for clocked behavior
+    else begin
+      q = data;
+    end
+  end
+
+endmodule
+```
++ We have a module named SimpleFlipFlop with clock (clk), reset (rst), data input (data), and output register (q).
+
++ The always @(posedge clk or posedge rst) block represents a synchronous process triggered by the positive edge of the clock (clk) or the positive edge of the reset (rst).
+
++ Inside the always block, there are two blocking assignments:
+
+- The first one (q = 1'b0;) is for the reset condition. When the reset (rst) is asserted, it sets the output register q to logic 0.
+- The second one (q = data;) represents the clocked behavior. When the clock edge is detected and the reset is not asserted, it updates the output register q with the input data (data).
+- Blocking assignments (=) are used in both cases, ensuring sequential execution of these statements within the always block. The simulator will wait for the completion of each assignment before moving on to the next line in the block.
