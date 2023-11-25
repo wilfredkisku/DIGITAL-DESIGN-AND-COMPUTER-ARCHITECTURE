@@ -114,7 +114,6 @@ In this case, the value of b + c is assigned to a, and the simulator will wait f
 
 Blocking assignments are commonly used in procedural blocks like always and initial blocks to model sequential behavior in hardware description. They are contrasted with non-blocking assignments (using "<="), which are used to model concurrent behavior in Verilog.
 
-### Non Blocking statement
 ```
 module SimpleFlipFlop (
   input wire clk,
@@ -146,3 +145,9 @@ endmodule
    - The second one (q = data;) represents the clocked behavior. When the clock edge is detected and the reset is not asserted, it updates the output register q with the input data (data).
 
 Blocking assignments (=) are used in both cases, ensuring sequential execution of these statements within the always block. The simulator will wait for the completion of each assignment before moving on to the next line in the block.
+
+### Non Blocking statement
+
+Non-blocking statements in Verilog use the "<=" assignment operator. Unlike blocking assignments ("="), non-blocking assignments allow for concurrent execution within the same procedural block. They are often used to model registers and flip-flops in hardware designs.
+
+Let's modify the previous example to use non-blocking assignments:
