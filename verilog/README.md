@@ -25,14 +25,14 @@ end
 mymodule mymodule_instance (. In ( D ) , Out ( E ) ); // using a wire as the output of a module
 ```
 ### reg Elements (Combinational and Sequential logic)
-reg are similar to wires, but can be used to store information (‘state’) like registers. The following are
+```reg``` are similar to wires, but can be used to store information (‘state’) like registers. The following are
 syntax rules when using reg elements.
-1. reg elements can be connected to the input port of a module instantiation.
-2. reg elements cannot be connected to the output port of a module instantiation.
-3. reg elements can be used as outputs within an actual module declaration.
-4. reg elements cannot be used as inputs within an actual module declaration.
-5. reg is the only legal type on the left-hand side of an always@ block = or <= sign.
-6. reg is the only legal type on the left-hand side of an initial block = sign (used in Test Benches).
-7. reg cannot be used on the left-hand side of an assign statement.
-8. reg can be used to create registers when used in conjunction with always@(posedge Clock) blocks.
-9. reg can, therefore, be used to create both combinational and sequential logic.
+1. ```reg``` elements can be connected to the input port of a module instantiation.
+2. ```reg``` elements cannot be connected to the output port of a module instantiation.
+3. ```reg``` elements can be used as outputs within an actual module declaration.
+4. ```reg``` elements cannot be used as inputs within an actual module declaration.
+5. ```reg``` is the only legal type on the left-hand side of an always@ block = or <= sign.
+6. ```reg``` is the only legal type on the left-hand side of an initial block = sign (used in Test Benches).
+7. ```reg``` cannot be used on the left-hand side of an assign statement.
+8. ```reg``` can be used to create registers when used in conjunction with always@(posedge Clock) blocks.
+9. ```reg``` can, therefore, be used to create both combinational and sequential logic.
