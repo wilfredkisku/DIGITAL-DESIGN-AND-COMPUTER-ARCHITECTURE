@@ -30,6 +30,16 @@ module d_latch (d, q, qbar, wen);
 endmodule
 ```
 
+### Parameterized Module definitions
+
+In Verilog, parameters are static values and are not associated with any specific data type like registers or nets.
+
+A constant expression in Verilog denotes a fixed numerical value or a parameter defined earlier. It's important to note that parameter values cannot be altered during runtime, although the defparam statement allows for modifications at compilation time.
+
+The defparam statement specifically operates during compilation, enabling the adjustment of parameter values. This can be achieved by utilizing the # delay specification in conjunction with module instantiation.
+
+In Verilog, there are two approaches for altering a module's parameter value when instantiating the module.
+
 ### wire Elements (Combinational logic)
 ```wire``` elements are simple wires (or busses of arbitrary width) in Verilog designs. The following are syntax
 rules when using wires:
