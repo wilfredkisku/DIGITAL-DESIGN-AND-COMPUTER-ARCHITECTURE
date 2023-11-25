@@ -10,3 +10,17 @@ some other element in your design.
 1. ```wire``` elements are the only legal type on the left-hand side of an assign statement.
 1. ```wire``` elements are a stateless way of connecting two peices in a Verilog-based design.
 1. ```wire``` elements can only be used to model combinational logic.
+
+```
+wire A , B , C , D , E ; // simple 1 -bit wide wires
+wire [8:0] Wide ; // a 9 -bit wide wire
+reg I ;
+
+assign A = B & C ; // using a wire with an assign statement
+
+always @ ( B or C ) begin
+  I = B | C ; // using wires on the right - hand side of an always@ assignment
+end
+
+mymodule mymodule_instance (. In ( D ) , Out ( E ) ); // using a wire as the output of a module
+```
