@@ -151,3 +151,26 @@ Blocking assignments (=) are used in both cases, ensuring sequential execution o
 Non-blocking statements in Verilog use the "<=" assignment operator. Unlike blocking assignments ("="), non-blocking assignments allow for concurrent execution within the same procedural block. They are often used to model registers and flip-flops in hardware designs.
 
 Let's modify the previous example to use non-blocking assignments:
+
+```
+module SimpleFlipFlop (
+  input wire clk,
+  input wire rst,
+  input wire data,
+  output reg q
+);
+
+  always @(posedge clk or posedge rst) begin
+    // Non-blocking assignment for reset
+    if (rst) begin
+      q <= 1'b0;
+    end
+    // Non-blocking assignment for clocked behavior
+    else begin
+      q <= data;
+    end
+  end
+
+endmodule
+
+```
