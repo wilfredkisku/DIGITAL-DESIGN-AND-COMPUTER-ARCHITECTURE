@@ -174,3 +174,12 @@ module SimpleFlipFlop (
 endmodule
 
 ```
+In this updated example:
+
++ The non-blocking assignment operator (<=) is used in both cases.
+
++ The first non-blocking assignment (q <= 1'b0;) in the reset condition means that the value 1'b0 will be assigned to q asynchronously, allowing other assignments to proceed concurrently.
+
++ Similarly, the second non-blocking assignment (q <= data;) in the clocked behavior will also occur concurrently with other statements in the block.
+
+The key difference is that non-blocking assignments do not wait for the completion of the assigned statement before moving on to the next statement in the block. Instead, they schedule the assignment to be executed in the next simulation time step. This behavior is particularly useful for modeling sequential logic elements in a way that reflects the concurrent nature of hardware.
