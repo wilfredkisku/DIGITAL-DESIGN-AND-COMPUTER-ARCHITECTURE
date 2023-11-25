@@ -1,3 +1,35 @@
+### Module definitions and instances
+
+The module is the basic logic entity in Verilog.
+
+A module definition is delimited by the keywords module and endmodule, as shown in the example below.
+
+The module header consists of the module keyword, the name of the module, and the port list in parenthesis, followed by a semicolon:
+module d_latch (d, q, qbar, wen);
+
+Following the module header are the port declarations.  Ports may be of type input, output, or inout, for input, output, or bidirectional ports.  Ports may be either scalar or vector.  The port names in the declarations do not have to occur in the same order as they did in the port list.
+
+The body of the module (consisting of wire and reg declarations and module instances) follow the port declarations.
+Here is an example of a module definition for a gated D-latch:
+
+```
+// GATED D LATCH
+module d_latch (d, q, qbar, wen);
+   input d, wen;
+   output q, qbar;
+
+   wire dbar, r, s;
+
+   inv1$ inv1 (dbar, d);
+   nand2$ nand1 (s, d, wen);
+   nand2$ nand2 (r, dbar, wen);
+
+   nand2$ nand3 (q, s, qbar);
+   nand2$ nand4 (qbar, r, q);
+
+endmodule
+```
+
 ### wire Elements (Combinational logic)
 ```wire``` elements are simple wires (or busses of arbitrary width) in Verilog designs. The following are syntax
 rules when using wires:
